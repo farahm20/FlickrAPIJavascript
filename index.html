@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet"  href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2:600|Baloo+Da+2:400,500&display=swap" rel="stylesheet">        <title>SearchFlickr</title>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <section class = "refreshDiv">
+                <button class = "refreshButton" id = "refresh"><a href="#"><i class="fas fa-redo-alt"></i></a></button>
+            </section>
+            
+            <section class = "headerSection">  
+                <article class = "backgroundText1">
+                    <h1>  Bring <br> Colors <br> in your <br>life</h1>
+                    <p>Create your customized image library using Flickr API</p>
+                </article><!--end of backgroundText1-->
+            </section><!--end of TextBoxes-->
+            <article class = "searchField">
+                <input type="text" id = "searchBarId" class = "searchBar" placeholder="Search images here...." name = "search">
+                <input type="text" id = "numberBarId" class = "numberBar" placeholder="How many images..">
+                <button id = "search"><i class = "fa fa-search"></i></button>        
+                
+            </article><!--end of SerchField-->
+
+            <div class = "allImagesModal" >
+                <div class = "gallerySection" id = "gallery"> 
+                <!--<div><img src="images/BackGround4.jpg" alt="backgound"></div>
+                    <div><img src="images/BackGround5.jpg" alt="backgound-2"></div>
+                    <div><img src="images/BackGround4.jpg" alt="bedroom-2"></div>-->
+                </div><!--end of gallerySection-->
+            </div>
+
+            <div class = "lightBox">
+                <div class = "lightBox-Content">
+                    <div class = "lightBoxClose">&times</div>
+                    <img src ="" class = "lightBoxImage" alt="" >
+                </div>   
+            </div>
+
+
+            
+        </div><!--end of wrapper -->
+
+        <footer class = "footer"></footer>
+        
+        
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

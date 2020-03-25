@@ -1,4 +1,4 @@
-import {addClickToImages, addEventListener, lightBox, selectImageforLightBox} from 'lightBoxScript.js';
+import {addClickToImages, lightBox, selectImageforLightBox} from 'lightBoxScript.js';
 
 const searchButton = document.querySelector('#search'); //getting the search button
 

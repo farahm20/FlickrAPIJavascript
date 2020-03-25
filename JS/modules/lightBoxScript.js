@@ -6,7 +6,7 @@
  let imageSrc;
  
 //******LightBOX event listener added to all the images recived from flickr api
-function addClickToImages(){
+export function addClickToImages(){
     for(let i = 0; i < galleryItems.length ; i++){
         console.log("For loop: all gallery Items " + galleryItems[i]);
         galleryItems[i].addEventListener("click", function(){
@@ -27,17 +27,16 @@ lightBoxContainer.addEventListener("click", function(event){
 })
 
 //*******LightBOX: selects the picture to show in lightbox.
-function lightBox(){
+export function lightBox(){
     console.log("In teh lightbox function" + lightBoxContainer);
     lightBoxContainer.classList.toggle("open");
 }
 
 //*******LightBOX: this will select images to appear in the lightbox. 
-function selectImageforLightBox () {
+export function selectImageforLightBox () {
     console.log(galleryItems[index])
     imageSrc = galleryItems[index].querySelector("img").getAttribute("src");
     console.log("In the selectImageforLightBox function " + imageSrc);
     lightBoxImage.src = imageSrc;
 }
 
-export default {addClickToImages, addEventListener, lightBox, selectImageforLightBox};

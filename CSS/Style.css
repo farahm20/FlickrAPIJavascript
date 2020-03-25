@@ -9,17 +9,13 @@ body {
     background-color: black;
 
 }
-
+/*Header with the heading and searchbar*/
 .wrapper {  
     background-color: #002123;
     background: url(../Images/BackGround1.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    /* background-position: 95% bottom; */
-    /* background-size: 100%; */
-    /* max-width: 1000px; */
-    /* height: 500px; */
     margin: 0 auto;
     max-width: 1000px;
     display: grid;
@@ -31,7 +27,7 @@ body {
                             "footer footer footer footer";
        
 }
-
+/*The refresh button*/
 .refreshDiv {
     grid-area: main;
     display: flex;
@@ -47,13 +43,9 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    /* color: white; */
-    /* text-align: center; */
-    /* background: rgba(51, 49, 49, 16.2); */
     background-color: rgba(252, 249, 249, 0.8);
-    /* border-radius: 5px 5px 5px 5px; */
 }
-
+/*Grid area for the header section */
 .headerSection {
     grid-area: main;
     padding: 5rem;
@@ -64,14 +56,10 @@ body {
     color: white;
     text-shadow: 2px 2px 4px #000000;
 } 
-/*
-.backgroundText1 {
-    align-self: flex-start;
-}*/
 
+/*Styling for h1 and p*/
 .backgroundText1 h1 {
     text-align-last: end;
-    /* align-self: center; */
     margin-left: 10px;
     font-weight: 600;
     font-size: 70px;
@@ -84,11 +72,14 @@ body {
     font-family: 'Baloo Da 2', cursive;
 }
 
+/*Styling for placeholder and search bar*/
+
 ::placeholder {
     color: rgb(252, 249, 249);
     font-size: 20px;
     font-family: 'Baloo Da 2', cursive;
 }
+
 .searchField {
     grid-area: main;
     margin-left: 88px;
@@ -130,6 +121,7 @@ button:hover {
     color: white;
 }
 
+/*Styling for image modal*/
 .allImagesModal {
     grid-area: images;
     background-color: #002123;
@@ -137,24 +129,14 @@ button:hover {
     padding-top: 20px;
 }
 
+/*grid within a grid for the photos we get from flickr api*/
 .gallerySection{
- /*  display: grid;
-   grid-template-columns: repeat(auto-fit, 328px);
-    max-width: 100%;
-    padding: 0 4px;*/
-
-    /*
-    grid-template-columns: repeat(5, 20vh);
-    grid-template-rows: repeat(5, 20vw);
-    grid-gap: 15px;*/
-
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
 
-    height: 1000px;
 }
 
 .gallerySection img {
@@ -170,6 +152,7 @@ button:hover {
     opacity: 0.7;
 }
 
+/*Styling for lightbox. Image modal**/
 .lightBox .lightBoxImage {
  /*   width: 100%;
     height: 100%;*/
@@ -211,6 +194,7 @@ button:hover {
     display: flex;
 }
 
+/*footer*/
 .footer {
     grid-area: footer;
     background: url(../Images/BackGround1.jpg) no-repeat;
@@ -218,7 +202,7 @@ button:hover {
     position: fixed;
 }
 
-
+/*for mobile screens */
 @media only screen and (max-width: 500px) {
     .wrapper {
  /*       height: auto;*/

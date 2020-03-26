@@ -1,9 +1,12 @@
+/*I have split all lightBox functions in a seperate js file, 
+for clarity since all the variables and functions used for lighbox are not required 
+for the Flickr API functions. */
 
- const galleryItems = document.querySelector(".gallerySection").children;
- const lightBoxContainer = document.querySelector(".lightBox");
- const lightBoxImage = document.querySelector(".lightBoxImage");
- let index;
- let imageSrc;
+const galleryItems = document.querySelector(".gallerySection").children;
+const lightBoxContainer = document.querySelector(".lightBox");
+const lightBoxImage = document.querySelector(".lightBoxImage");
+let index;
+let imageSrc;
  
 //******LightBOX event listener added to all the images recived from flickr api
 export function addClickToImages(){

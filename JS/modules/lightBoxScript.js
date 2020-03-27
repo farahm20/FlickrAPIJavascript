@@ -1,13 +1,25 @@
-/*I have split all lightBox functions in a seperate js file, 
-for clarity since all the variables and functions used for lighbox are not required 
-for the Flickr API functions. */
+/*I have split all lightBox functions and refreshPage in a seperate js file, 
+This is done for clarity since; 
+1: all the variables and functions used for lighbox are not required for the Flickr API functions 
+2: they require more styling, further more if in future some modifications are 
+required it will be easier to just access thees functions from a separate file. 
+The same goes for the refreshPage function.  */
 
 const galleryItems = document.querySelector(".gallerySection").children;
 const lightBoxContainer = document.querySelector(".lightBox");
 const lightBoxImage = document.querySelector(".lightBoxImage");
 let index;
 let imageSrc;
- 
+
+refreshPage() ; //refreshes the page in middle of a search output
+//*****the refresh page button function
+export function refreshPage() {
+        let refrehButton = document.getElementById('refresh');
+        refrehButton.addEventListener('click', function() {
+        setTimeout(location.reload(true),t)
+    });  
+}
+
 //******LightBOX event listener added to all the images recived from flickr api
 export function addClickToImages(){
     for(let i = 0; i < galleryItems.length ; i++){

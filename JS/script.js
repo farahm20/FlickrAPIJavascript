@@ -1,14 +1,7 @@
-import {addClickToImages, lightBox, selectImageforLightBox} from './modules/lightBoxScript.js';
+import {addClickToImages, lightBox, selectImageforLightBox, refreshPage} from './modules/lightBoxScript.js';
 const searchButton = document.querySelector('#search'); //getting the search button
 
-refreshPage() ; //refreshes the page in middle of a search output
-//*****the refresh page button function
-function refreshPage() {
-        let refrehButton = document.getElementById('refresh');
-        refrehButton.addEventListener('click', function() {
-        setTimeout(location.reload(true),t)
-    });  
-}
+
 
 //*******appends img src in html for every image recieved from Flickr Api
 function showImagesInHtml(data) {
